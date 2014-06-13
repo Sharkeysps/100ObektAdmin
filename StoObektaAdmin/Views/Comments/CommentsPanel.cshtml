@@ -1,0 +1,31 @@
+﻿@model StoObektaAdmin.Models.CommentsModel
+
+<h1>Контрол на Коментарите</h1>
+<div>@Html.ActionLink("Панел за Туристи", "Index", "Tourists")</div>
+<div>Въведете номера на обекта за който искате да получите коментари</div>
+@using (Html.BeginForm("GetCommentsForSite", "Comments"))
+{
+   @Html.TextBox("number")
+   <input type="submit" value="Search" />
+}
+
+@if(Model.Comments!=null && Model.Comments.Count!=null)
+{
+    <table border="1">
+    @foreach(var comment in Model.Comments)
+    {
+       <tr>
+        <td>@comment.Comment</td>
+      <td>  @using (Html.BeginForm("DeleteComment", "Comments", FormMethod.Post))
+          {
+     <input type="hidden" name="commentId" value="@comment.CommentId" />
+     <input type="hidden" name="siteId" value="@comment.SiteID" />
+     <input type="submit" value="Delete" />
+        }
+
+      </td>
+           </tr>
+            
+    }
+        </table>
+}

@@ -1,0 +1,22 @@
+﻿@model StoObektaAdmin.Models.TouristsModel
+
+
+<h1>Контрол на Потребителите</h1>
+<div>@Html.ActionLink("Панел за Коментари", "Index", "Comments")</div>
+
+ <table border="1">
+    @foreach(var tourist in Model.TouristInfo)
+    {
+       <tr>
+        <td>@tourist.AndroidID</td>
+        <td>@tourist.VisitedSites</td>
+            <td>  @using (Html.BeginForm("SendMessage", "Tourists", FormMethod.Post))
+          {
+     <input type="hidden" name="androidID" value="@tourist.AndroidID" />
+     @Html.TextBox("message",tourist.MessageToUser)
+     <input type="submit" value="Send Message" />
+        }
+           </tr>
+            
+    }
+        </table>

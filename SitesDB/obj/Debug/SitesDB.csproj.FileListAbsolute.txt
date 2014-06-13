@@ -1,0 +1,10 @@
+D:\Informatik\Asp.net Projects\StoObektaAdmin\SitesDB\bin\Debug\SitesDB.dll.config
+D:\Informatik\Asp.net Projects\StoObektaAdmin\SitesDB\bin\Debug\SitesDB.dll
+D:\Informatik\Asp.net Projects\StoObektaAdmin\SitesDB\bin\Debug\SitesDB.pdb
+D:\Informatik\Asp.net Projects\StoObektaAdmin\SitesDB\bin\Debug\EntityFramework.dll
+D:\Informatik\Asp.net Projects\StoObektaAdmin\SitesDB\bin\Debug\EntityFramework.SqlServer.dll
+D:\Informatik\Asp.net Projects\StoObektaAdmin\SitesDB\bin\Debug\EntityFramework.xml
+D:\Informatik\Asp.net Projects\StoObektaAdmin\SitesDB\bin\Debug\EntityFramework.SqlServer.xml
+D:\Informatik\Asp.net Projects\StoObektaAdmin\SitesDB\obj\Debug\SitesDB.csprojResolveAssemblyReference.cache
+D:\Informatik\Asp.net Projects\StoObektaAdmin\SitesDB\obj\Debug\SitesDB.dll
+D:\Informatik\Asp.net Projects\StoObektaAdmin\SitesDB\obj\Debug\SitesDB.pdb
